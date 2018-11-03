@@ -1,0 +1,125 @@
+body{
+    background-color: wheat;
+    font-family: 'KoHo', sans-serif;
+    color: #975702;
+}
+header{
+    font-family: 'Pacifico', cursive;
+    font-display: center;
+    font-style: oblique;
+    font-size: 35px;
+    text-align: center;
+    font-stretch: expanded;
+    color: burlywood;
+}
+
+h2{
+    font-size: 33px;
+    font-style: normal;
+}
+
+.navigationbar {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: wheat;
+    background-color: #975702;
+}
+
+.navigationbar a{
+    text-decoration: none;
+    color: wheat;
+    size: 10px;
+    padding: 10px;
+}
+
+.navigationbar a:hover{
+    background-color: wheat;
+    color: #975702;
+}
+
+.about{
+    margin-top: 50px;
+    padding: 3%;
+    background-color: burlywood;
+    text-align: center;
+    font-stretch: condensed;
+    font-style: oblique;
+    border-radius: 20px;
+}
+
+.recipe_images{
+    display: none;
+    margin-top: 20px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.recipes{
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #975702;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: wheat;
+}
+
+.recipe_name {
+    color: wheat;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+.image_number {
+    color: wheat;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: burlywood;
+    border-radius: 40%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #975702;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}

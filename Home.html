@@ -5,9 +5,11 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=KoHo|Pacifico" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="ss1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+  <script src = "displayRecipes.js"></script>
 
   <header class="title" id="title">
     <h1 class> <b>Cooking with kids</b></h1>
@@ -30,20 +32,39 @@
       <p> Welcome to our website on cooking with your kids. We provide a platform for parents and children to bond over cooking.</b>
       This will also help children understand more about their food consumption, especially with the increase in obesity in recent years. </p>
   </div>
-
+  <br>
 
   <!-- images Section -->
-  <div class = "images" id = images>
-    <div class = "image1"> Image1 </div>
-    <img src="https://flockler.com/thumbs/sites/192/fork-biscuits_s1200x630_c1002x585_l218x882.jpg" alt="Image1" style="width:100%">
+  <div class = "recipes" id = "recipes">
 
-    <div class = "image2"> Image2 </div>
-    <img src="https://flockler.com/thumbs/sites/192/fork-biscuits_s1200x630_c1002x585_l218x882.jpg" alt="Image2" style="width:100%">
+      <div class = "recipe_images fade" id = "recipe_images">
+          <div class = "image_number"> 1 / 3 </div>
+          <img src="https://flockler.com/thumbs/sites/192/fork-biscuits_s1200x630_c1002x585_l218x882.jpg" alt="Image1" style="width:100%">
+          <div class = "recipe_name"> recipe_name_one </div>
+      </div>
 
-    <div class = "image3"> Image3 </div>
-    <img src="https://flockler.com/thumbs/sites/192/fork-biscuits_s1200x630_c1002x585_l218x882.jpg" alt="Image3" style="width:100%">
+      <div class = "recipe_images fade" id = "recipe_images">
+          <div class = "image_number"> 2 / 3 </div>
+          <img src="https://flockler.com/thumbs/sites/192/fork-biscuits_s1200x630_c1002x585_l218x882.jpg" alt="Image2" style="width:100%">
+          <div class = "recipe_name"> recipe_name_two </div>
+      </div>
+        
+      <div class = "recipe_images" id = "recipe_images">
+          <div class = "image_number"> 3 / 3 </div>
+          <img src="https://flockler.com/thumbs/sites/192/fork-biscuits_s1200x630_c1002x585_l218x882.jpg" alt="Image3" style="width:100%">
+          <div class = "recipe_name"> recipe_name_three </div>
+      </div>
+
+      <a class="prev" onclick="nextRecipe(-1)">&#10094;</a>
+      <a class="next" onclick="nextRecipe(1)">&#10095;</a>
   </div>
-
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentRecipe(1)"></span> 
+    <span class="dot" onclick="currentRecipe(2)"></span> 
+    <span class="dot" onclick="currentRecipe(3)"></span> 
+  </div>
 
 <!-- Footer -->
 <footer class>
