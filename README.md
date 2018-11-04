@@ -12,4 +12,4 @@ CSS <br>
 Javascript<br>
 DialogFlow (https://console.dialogflow.com/api-client) <br>
 Firebase (https://console.firebase.google.com/) <br>
-Google Home
+Google Home (https://console.actions.google.com)
