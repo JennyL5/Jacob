@@ -1,21 +1,8 @@
-var slideIndex = 0;
-showrecipesAutomatic();
+var slideIndex = 1;
 showRecipes(slideIndex);
 
-function showRecipesAutomatic() {
-    var i;
-    var slides = document.getElementsByClassName("recipe_images");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2000);
-}
-
 function showRecipes(n){
-    slideIndex = 1;
+    var i;
     var slides = document.getElementsByClassName("recipe_images");
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1} 
