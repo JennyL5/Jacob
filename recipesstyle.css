@@ -1,0 +1,55 @@
+body{
+    background-color: wheat;
+    font-family: 'KoHo', sans-serif;
+    color: #975702;
+}
+.intro{
+    text-align: center;
+    padding-bottom: 20px;
+}
+h3{
+    padding: 2%;
+}
+.wrapper{
+    width: 1080px;
+    margin-left: 110px;
+}
+.recipe {   
+    width: 340px;    
+    float: left;       
+    height: 320px;
+    background-position: bottom;
+    padding-bottom: 40px;
+}
+
+.recipe_picture img {    
+    width: 300px;    
+    height: 300px;
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #975702;
+}
+
+.recipe_title {     
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    font-weight: 200;
+    font-size: 40px;  
+    text-align: center;
+    margin-top: -165px;
+    opacity: 0;
+    color: #673602;
+    background-color: transparent;
+}
+
+.recipe_picture img:hover {
+    opacity: 0.3;
+    transition: opacity 0.8s;
+    box-shadow: 0 0 20px #673602;
+}
+
+.recipe_picture:hover .recipe_title{
+    opacity: 1;
+    transition: opacity 1.2s;
+}
