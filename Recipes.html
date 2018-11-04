@@ -3,7 +3,9 @@
 
 <head>
 <link href="https://fonts.googleapis.com/css?family=KoHo|Pacifico" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="ss1.css">
+<link rel="stylesheet" type="text/css" href="mainstyle.css">
+<link rel="stylesheet" type="text/css" href="recipesstyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -16,40 +18,66 @@
 
 
   <div class = "navigationbar">
-    <div class = "top1">
         <a href="Home.html">Home</a>
         <a href="#about">About</a>
         <a href="Recipes.html">Recipes</a>
-      </div>
-    </div>
-
-
-
-  <!-- Intro -->
-    <div class="intro" id="intro">
-    <h3 class> Introduction</h3> </a>
-      <p> Please select which recipes you would like to follow by clicking on the below images. <br>
-      The links will take you to the recipes. </p>
-    </div>
-
-
-  <!-- Recipes Section -->
-  <div class = "recipes" id = recipes>
-    <div class = "r1"> Biscuits </div>
-      <a href = "recipe1.html"> <img src="https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg" alt="r1" style="width:100%"> </a>
-
-    <div class = "r2"> Cake </div>
-      <a href = "recipe2.html"><img src="https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Mint-Patty-Cake_exps140673_CMT2426390C08_17_2b_RMS.jpg" alt="r2" style="width:100%"> </a>
-
-    <div class = "r3"> Milkshake </div>
-    <a href = "recipe3.html"> <img src="https://i.pinimg.com/originals/36/51/86/365186ba72b0c32f3d45845b49b367d2.jpg" alt="r3" style="width:100%"> </a>
   </div>
 
 
 
+  <!-- Intro -->
+  <div class="intro" id="intro">
+  <h3 class> Introduction</h3>
+    <p> Please select which recipes you would like to follow by clicking on the below images. <br>
+    The links will take you to the recipes. </p>
+  </div>
+
+
+  <!-- Recipes Section -->
+  <div class = "wrapper">
+      <div class = "recipe fade" id = recipe>
+          <div class = "recipe_picture">
+            <a href = "recipe1.html"> <img src="https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg" alt="r1"> </a>
+            <div class = "recipe_title"> Biscuits </div>
+          </div>
+      </div>
+      <div class = "recipe fade" id = recipe>
+          <div class = "recipe_picture">
+            <a href = "recipe2.html"><img src="https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Mint-Patty-Cake_exps140673_CMT2426390C08_17_2b_RMS.jpg" alt="r2"> </a>
+            <div class = "recipe_title"> Cake </div>
+          </div>
+      </div>
+      <div class = "recipe fade" id = recipe>
+            <div class = "recipe_picture">
+              <a href = "recipe3.html"> <img src="https://i.pinimg.com/originals/36/51/86/365186ba72b0c32f3d45845b49b367d2.jpg" alt="r3"> </a>
+              <div class = "recipe_title"> Milkshake </div>
+            </div>
+      </div>
+      <div class = "recipe fade" id = recipe>
+        <div class = "recipe_picture">
+          <a href = "recipe1.html"> <img src="https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg" alt="r1"> </a>
+          <div class = "recipe_title"> Biscuits </div>
+        </div>
+    </div>
+    <div class = "recipe fade" id = recipe>
+        <div class = "recipe_picture">
+          <a href = "recipe2.html"><img src="https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Mint-Patty-Cake_exps140673_CMT2426390C08_17_2b_RMS.jpg" alt="r2"> </a>
+          <figcaption class = "recipe_title"> Cake </div>
+          </div>
+    </div>
+    <div class = "recipe fade" id = recipe>
+          <div class = "recipe_picture">
+            <a href = "recipe3.html"> <img src="https://i.pinimg.com/originals/36/51/86/365186ba72b0c32f3d45845b49b367d2.jpg" alt="r3"> </a>
+            <div class = "recipe_title"> Milkshake </div>
+          </div>
+    </div>
+  </div>
+
+ <br>
+
 
 <!-- Footer -->
-<footer class>
+<footer>
   <p>Powered by <a href="https://www.jacobshack.com" title="Jacobshack" target="_blank">Jacobshack</a></p>
 </footer>
 
